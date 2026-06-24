@@ -5,15 +5,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tupedidoya - Menú Inteligente",
-  description: "Pide y paga desde tu mesa vía QR",
+  title: "Tupedidoya",
+  description: "Menú Inteligente",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="es">
       <body className={inter.className}>{children}</body>
